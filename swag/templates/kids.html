@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kid's Category</title>
+    <link href="assets/home.css" rel="stylesheet" type="text/css">
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('assets/background.jpg'); /* Replace with your background image URL */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    header {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8); /* Adds a slight transparency */
+        border-bottom: 2px solid #ddd;
+    }
+    
+    h1 {
+        margin: 0;
+        color: #333;
+    }
+    
+    a {
+        display: block;
+        margin-top: 10px;
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    main {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .sub-category-card {
+        flex: 0 0 auto;
+        width: 250px;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .sub-category-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        border-radius: 8px;
+    }
+    
+    .sub-category-card h3 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        margin: 0;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+    
+    .sub-category-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+</style>    
+</head>
+<body>
+    <header>
+        <h1>kids wear</h1>
+        <a href="home.html">Back to Home</a>
+    </header>
+    <main>
+        <section class="sub-category">
+            <div class="sub-category-card">
+                <h3>Traditional</h3>
+                <img src="assets/images/traditional.jpg" alt="Traditional Wear">
+            </div>
+            <div class="sub-category-card">
+                <h3>sweaters</h3>
+                <img src='https://tse2.mm.bing.net/th?id=OIP.XafEWt_-CERXCv-W5vg64gHaHa&pid=Api&P=0&h=180' alt="wool  Wear">
+            </div>
+            <div class="sub-category-card">
+                <h3>Party Wear</h3>
+                <img src='https://image.made-in-china.com/2f0j00ZcifeSIzbLbg/Kids-Garment-Stock-Children-Flower-Gown-Child-Clothing-Party-Wear-Party-Wear-Dresses-Children-s-Apparel-Girls-Dress-Evening-Dress-Performing-Dress-Baby-Girl.jpg' alt="Party Wear">
+            </div>
+            <div class="sub-category-card">
+                <h3>Nightwear</h3>
+                <img src='https://www.pinkblueindia.com/wp-content/uploads/2024/01/twinsbabysatinnightsuit.jpg' alt="Nightwear">
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

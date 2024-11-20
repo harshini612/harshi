@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .banner-card{
+            position:relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner-card img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+        .banner-text{
+            position: absolute;
+            color: navy;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+        .banner-text p{
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin:0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            text-align: left;
+            width: 100%;
+            margin: auto;
+            padding: 20px 0;
+        }
+        .text-content {
+            flex: 1;
+            text-align: left;
+            padding-right: 20px;
+        }
+
+        .image {
+            float: right;
+            max-height: 350px;
+            max-width: 100%;
+            height: auto;
+            margin-top: 60px;
+            margin-left: 40px;
+            margin-right: 60px; /* Added margin for space on the right */
+        }
+        .highlight {
+            font-weight: bold;
+            color: black;
+            font-size: 18px;
+            text-align: left;
+            margin-left:60px ;
+        }
+        .subtext {
+            color: burlywood;
+            margin-bottom: 10px;
+            text-align: left;
+            margin-left:60px ;
+        }
+        footer {
+            background-color: #9584f6;
+            color: #fff;
+            text-align: center;
+            padding: 3px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+    <title>Hyderabad Marathon</title>
+</head>
+<body><div class="banner-card">
+    <img src="https://img.freepik.com/premium-photo/concept-communication-contact-us-customer-support-hotline-people-connect-business-hand-touching-virtual-screen-contact-icons-email-address-live-chat-with-internet-wifi_162459-2015.jpg">
+    <div class="banner-text">
+     </div>
+     </div>
+    <div class="container">
+        <div class="text-content">
+            <div class="item">
+                <p class="highlight">costumer care:</p>
+                <p class="subtext">+91 9985100008</p>
+                <p style="color: blue; text-align: left;font-size: 20px;margin-left: 60px;"><b>Email Us:</b></p>
+            </div>
+            <div class="item">
+                <p class="highlight">General queries:</p>
+                <p class="subtext">swag@gmail.com</p>
+            </div>
+            <div class="item">
+                <p class="highlight">order related issues:</p>
+                <p class="subtext">order@marathonhyderabad.com</p>
+            </div>
+            <div class="item">
+                <p class="highlight">order tracking:</p>
+                <p class="subtext">hmgr@marathonhyderabad.com</p>
+            </div>
+            <div class="item">
+                <p class="highlight">order  related queries:</p>
+                <p class="subtext">order@marathonhyderabad.com</p>
+            </div>
+         </div>
+    <div>
+             <img src="https://thegarage.wales/wp-content/uploads/2022/11/contact-us.jpg" alt="Contacting Image" class="image">
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2024 Swag Website | Contact: support@swag.com</p>
+    </footer>
+</body>
+</html>

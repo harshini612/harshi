@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Category</title>
+    <link href="assets/home.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-bottom: 2px solid #ddd;
+        }
+
+        h1 {
+            margin: 0;
+            color: #333;
+        }
+
+        a {
+            display: block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between; /* Adjusts spacing between items */
+            flex-wrap: nowrap; /* Ensures items are side by side without wrapping */
+            overflow-x: auto; /* Adds horizontal scroll if needed */
+            padding: 20px;
+            gap: 15px; /* Space between cards */
+        }
+
+        .sub-category-card {
+            flex: 0 0 auto; /* Prevents shrinking and keeps items side by side */
+            width: 250px; /* Fixed width for each card */
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .sub-category-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .sub-category-card h3 {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            margin: 0;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .sub-category-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Women's Collection</h1>
+        <a href="home.html">Back to Home</a>
+    </header>
+    <main>
+        <div class="container">
+            <div class="sub-category-card">
+                <h3>Traditional</h3>
+                <img src='https://tse4.mm.bing.net/th?id=OIP.cSMAcLx4RLeCP57I0GpcjgAAAA&pid=Api&P=0&h=180' alt="Traditional Wear">
+            </div>
+            <div class="sub-category-card">
+                <h3>Ethnic</h3>
+                <img src='http://www.beatitude.in/cdn/shop/articles/DSC_2173_720x_dec1d27e-c2a7-4ce7-8b21-654c0ca12e43_1200x1200.webp?v=1675162397' alt="Ethnic Wear">
+            </div>
+            <div class="sub-category-card">
+                <h3>Party Wear</h3>
+                <img src='https://cdn.shopify.com/s/files/1/1104/9862/products/Macloth-10402_1024x1024.jpg?v=1571439112' alt="Party Wear">
+            </div>
+            <div class="sub-category-card">
+                <h3>Nightwear</h3>
+                <img src='https://images.bewakoof.com/uploads/grid/app/different-types-of-nightwear-for-women-bewakoof-blog-11-1615361640.png' alt="Nightwear">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Products</h2>
+<!-- Inline styles for this specific page -->
+<style>
+    .wishlist-btn {
+        color: #ff6f61;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+    .buy-now-btn {
+        background-color: #28a745;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .buy-now-btn:hover {
+        background-color: #218838;
+    }
+</style>
+
+<!-- Example product cards -->
+<section class="product-list">
+    <div class="product-card">
+        <h3>Product Name</h3>
+        <a href="{% url 'add_to_wishlist' product.id %}" class="wishlist-btn">&#9825; Wishlist</a>
+        <a href="{% url 'buy_now' product.id %}" class="buy-now-btn">Buy Now</a>
+    </div>
+</section>
+{% endblock %}

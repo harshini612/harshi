@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse by Categories</title>
+    <link href="assets/home.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/010/803/399/original/background-with-colorful-shopping-bags-illustration-sale-and-discount-concept-vector.jpg');  /* Set your background image here */
+    background-size: cover;  /* Ensure the background covers the whole page */
+    background-position: center;  /* Center the background image */
+    background-attachment: fixed; 
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(248, 248, 248, 0.8);  /* Light background with opacity for readability */
+    border-bottom: 2px solid #e0e0e0;
+}
+
+h2 {
+    margin: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.category-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex: 1;
+    z-index: 1;  /* Ensure category cards are above the background */
+}
+
+.category-card {
+    position: relative;  /* Allow absolute positioning of text inside the card */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    height: 350px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;  /* Ensure the card is above the background */
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Make sure the image covers the entire box without distortion */
+    display: block;
+}
+
+.category-card p {
+    position: absolute;
+    top: 50%;  /* Center the text vertically */
+    left: 50%;  /* Center the text horizontally */
+    transform: translate(-50%, -50%);  /* Perfect centering */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Add shadow for better readability */
+    text-align: center;
+    z-index: 2;  /* Ensure text appears above the image */
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.category-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;  /* Consistent width */
+    height: 350px; /* Consistent height */
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the image covers the entire card without distortion */
+    display: block;
+}
+
+
+</style>
+<body>
+    <header>
+        <h2>Browse by Categories</h2>
+        <a href="{% url 'home' %}">Back to Home</a>
+    </header>
+    
+    
+
+    <div class="category-cards">
+        <div class="category-card">
+            <a href="{% url 'womens' %}">
+                <img src='http://www.fashionhombre.com/wp-content/uploads/2019/10/Best-Fall-Casual-Work-Outfits-For-Women-9-1.jpg' alt="Women's Category Image">
+                <p>Women's</p>
+            </a>
+        </div>
+        <div class="category-card">
+            <a href="{% url 'mens' %}">
+                <img src='https://i.pinimg.com/originals/74/db/38/74db381d0642cb7efaf11bc8de99a8d8.jpg' alt="Men's Category Image" style="height:350px; width:250px;">
+                <p>Men's</p>
+            </a>
+        </div>
+        <div class="category-card">
+            <a href="{% url 'kids' %}">
+                <img src='https://tse2.mm.bing.net/th?id=OIP.e7EdWNui1HNwW5ImqJmUYgHaHG&pid=Api&P=0&h=180' alt="Kids' Category Image" style="height:350px; width:250px;">
+                <p>Kids</p>
+            </a>
+        </div>
+        <div class="category-card">
+            <a href="{% url 'electronics' %}">
+                <img src='https://tse4.mm.bing.net/th?id=OIP.6AwfvMS9Z_ujYPRtHs1fYgHaFb&pid=Api&P=0&h=180' alt="Electronics Category Image" style="height:350px; width:250px;">
+                <p>Electronics</p>
+            </a>
+        </div>
+        <div class="category-card">
+            <a href="{% url 'accessories' %}">
+                <img src='https://tse4.mm.bing.net/th?id=OIP.tHT9bT1ogq24nUbPBSP-hQHaE8&pid=Api&P=0&h=180' alt="Accessories Category Image" style="height:350px; width:250px;">
+                <p>Accessories</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

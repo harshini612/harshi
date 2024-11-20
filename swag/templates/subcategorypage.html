@@ -1,0 +1,20 @@
+<!-- subcategorypage.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ subcategory.name }}</h1>
+
+<ul>
+    {% for product in products %}
+    {% if subcategory.slug == 'womens-shoes' or subcategory.slug == 'womens-dresses' or 
+          subcategory.slug == 'mens-shirts' or subcategory.slug == 'mens-shoes' %}
+    <li>
+        <h3>{{ product.name }}</h3>
+        <p>Price: {{ product.price }}</p>
+    </li>
+    {% endif %}
+    {% empty %}
+    <p>No products found in this subcategory.</p>
+    {% endfor %}
+</ul>
+{% endblock %}

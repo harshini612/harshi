@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>electronics</title>
+    <link href="assets/home.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('assets/background-electronics.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for header */
+    border-bottom: 2px solid #ddd;
+}
+
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 15px;
+}
+
+.sub-category-card {
+    flex: 0 0 auto;
+    width: 250px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sub-category-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.sub-category-card h3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.sub-category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+</style>
+<body>
+    <header>
+        <h1>electronics</h1>
+        <a href="home.html">Back to Home</a>
+    </header>
+    <main>
+        <section class="sub-category">
+            <div class="sub-category-card">
+                <h3>mobiles</h3>
+                <img src='https://techeconomy.ng/wp-content/uploads/2023/12/The-Most-Popular-Phone-Brands-in-Every-Country-in-2023.jpg' alt="mobile phones">
+            </div>
+            <div class="sub-category-card">
+                <h3>laptop</h3>
+                <img src='https://tse4.mm.bing.net/th?id=OIP.B1kdvmRg-32GC5C-6MswwAHaEK&pid=Api&P=0&h=180' alt="laptops">
+            </div>
+            <div class="sub-category-card">
+                <h3>headset</h3>
+                <img src='https://geekculture.co/wp-content/uploads/2020/08/logitech-g733-lightspeed-wireless-gaming-headset-4.jpg' alt="headset">
+            </div>
+            <div class="sub-category-card">
+                <h3>phonecases</h3>
+                <img src='https://i.pinimg.com/originals/48/8a/0c/488a0cb2a2242741979cb8d4511c7f20.jpg' alt="phonecases">
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html> 

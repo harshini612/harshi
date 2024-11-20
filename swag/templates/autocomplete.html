@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search with Autocomplete</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+        
+.search-bar {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+
+     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+            $(function() {
+            $("#search-bar").autocomplete({
+                source: "/autocomplete/"  
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search...">
+    </div>
+<div class="no-results">
+    <p>No results found. Try a different search term.</p>
+</div>
+
+</body>
+</html>

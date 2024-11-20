@@ -1,0 +1,242 @@
+<!-- Header Section -->
+<!-- Include Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+{% extends 'base.html' %}
+
+{% block title %}Home | Swag App{% endblock %}
+
+{% block content %}
+
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background-color: #2874F0; /* Flipkart blue */
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        display: none; /* Hide logo and home symbol */
+    }
+
+    .auth-links {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .auth-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .auth-links a i {
+        margin-right: 5px;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .search-icon-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .search-icon-container i {
+        position: absolute;
+        left: 10px;
+        color: #888;
+    }
+
+    .search-bar {
+        flex: 1;
+        width: 300px;
+        padding: 10px;
+        padding-left: 35px; /* To make space for the icon */
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .hero {
+        background: url('https://img.freepik.com/premium-photo/background-shopping_931878-80194.jpg') no-repeat center center/cover;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .hero .cta-btn {
+        background-color: #ff6f61;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+
+    .sales-banner, .banner-card {
+        background-color: #ffe0b2;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+        margin: 20px 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s;
+    }
+
+    .sales-banner:hover, .banner-card:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .banner-card h2, .banner-card p, .sales-banner h3 {
+        margin: 10px 0;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .product-card {
+        background-color: white;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+        transform: scale(1.05);
+    }
+
+    .product-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 0.9rem;
+    }
+</style>
+
+<!-- Header Section -->
+<header>
+    <!-- Header Section -->
+<header>
+    <div class="auth-links">
+        <h1>swag app</h1>
+        <a href="{% url 'login' %}"><i class="fas fa-user"></i> Login</a>
+        <a href="{% url 'cart' %}"><i class="fas fa-shopping-cart"></i> Cart</a>
+        <a href="{% url 'becomeseller' %}"><i class="fas fa-store"></i> Become a Seller</a>
+        <a href="{% url 'costumercare' %}"><i class="fas fa-headset"></i> Costumer Care</a>
+    </div>
+    <div class="search-container">
+        <div class="search-icon-container">
+            <i class="fas fa-search"></i>
+            <input type="text" class="search-bar" placeholder="Search for products...">
+        </div>
+    </div>
+</header>
+
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h2>Welcome to Shopping World</h2>
+        <p>Shop the latest categories tailored to your taste</p>
+        <a href="{% url 'categories' %}" class="cta-btn">Start Shopping</a>
+    </div>
+</section>
+
+<!-- Sales Banner Section -->
+<section class="sales-banner">
+    <h3>Exclusive Sale - Up to 50% Off!</h3>
+    <p>Don't miss out on our best deals of the season.</p>
+    <a href="{% url 'sales' %}" class="cta-btn">Shop Now</a>
+</section>
+
+<!-- Banner Section -->
+<section class="banner">
+    <div class="banner-container">
+        <div class="banner-card">
+            <h2>Seasonal Sale</h2>
+            <p>Up to 50% off on select items!</p>
+            <a href="{% url 'sales' %}" class="cta-btn">Shop Now</a>
+        </div>
+        <div class="banner-card">
+            <h2>New Arrivals</h2>
+            <p>Check out the latest trends</p>
+            <a href="{% url 'sales' %}" class="cta-btn">Discover</a>
+        </div>
+    </div>
+</section>
+
+<!-- Product Grid -->
+<section class="product-grid">
+    <div class="product-card">
+        <img src="https://5.imimg.com/data5/DU/TW/MY-38197357/jade-ladies-khaki-sandal-500x500.jpg" alt="Sandals">
+        <h3>Sandals</h3>
+        <p>Rs: 400</p>
+        <form action="{% url 'add_to_cart' product.id %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary">Add to Cart</button>
+        </form>
+        
+        
+        
+    </div>
+    <div class="product-card">
+        <img src="https://i.pinimg.com/originals/bb/3e/32/bb3e32def2d90555398d9211309ea4ff.jpg" alt="Watch">
+        <h3>Watch</h3>
+        <p>Rs: 500</p>
+        <form action="{% url 'add_to_cart' product.id %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary">Add to Cart</button>
+        </form>
+        
+    </div>
+    <div class="product-card">
+        <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/2024/AUGUST/13/Q7f9jNuD_68d1a9bf34ab4ebfa8a873adfd2cc2d7.jpg" alt="Shirts">
+        <h3>Shirts</h3>
+        <p>Rs: 300</p>
+        <form action="{% url 'add_to_cart' product.id %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary">Add to Cart</button>
+        </form>
+        
+    </div>
+</section>
+{% endblock %}  s

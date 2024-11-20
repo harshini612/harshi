@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasonal Sales Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        .seasonal-sale {
+            background-color: #ffebcc;
+        }
+        .new-arrival {
+            background-color: #d1e7dd;
+        }
+        .discount {
+            background-color: #ffe2e2;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            color: #ff4d4d;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .add-to-cart {
+            display: inline-block;
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            transition: background-color 0.3s;
+        }
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+        .product-card .badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #f39c12;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+            .product-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        height: 400px; /* Set a uniform height */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .product-card img {
+        max-width: 100%;
+        height: 200px; /* Set a uniform height */
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+        </style>
+</head>
+<body>
+    <div class="section seasonal-sale">
+        <h2>Seasonal Sale</h2>
+      
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51McRkfN3WS._AC_UL1000_.jpg" alt="Seasonal Product 1">
+                <div class="product-name">hoodies</div>
+                <div class="product-price"><Rs:600></Rs:600></div>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <img src="https://www.rankandstyle.com/media/products/f/free-people-kennedy-waffle-knit-scarf-winter-s.jpg" alt="Seasonal Product 2">
+                <div class="product-name">scarfs</div>
+                <div class="product-price"><Rs:300></Rs:300></div>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section new-arrival">
+        <h2>New Arrivals</h2>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2021/1/YJ/JM/ZU/36974239/product-jpeg.jpeg" alt="New Arrival 1">
+                <div class="product-name">nike sports shoes</div>
+                <div class="product-price">Rs:1500</div>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.bfb4E1yPkos-kOxTov63JwHaEK&pid=Api&P=0&h=180" alt="New Arrival 2">
+                <div class="product-name">iphone 16</div>
+                <div class="product-price">Rs:69,999</div>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section discount">
+        <h2>50% Discount</h2>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="badge">50% Off</div>
+                <img src="https://m.media-amazon.com/images/I/71-yaJc6Z-L._UL1500_.jpg" alt="Discount Product 1">
+                <div class="product-name">Fastrack watch </div>
+                <div class="product-price">Rs:800</div>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <div class="product-card">
+                <div class="badge">50% Off</div>
+                <img src="https://rukminim2.flixcart.com/image/612/612/l2qhjm80/shirt/x/z/m/40-651661-netplay-original-imageykg33tv6dgy.jpeg?q=70" alt="Discount Product 2">
+                <div class="product-name">Net play shirt</div>
+                <div class="product-price">Rs:499 </div>
+                <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

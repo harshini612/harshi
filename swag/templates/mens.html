@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>men's Category</title>
+    <link href="assets/home.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.example.com/background-image.jpg'); /* Replace with actual background image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    border-bottom: 2px solid #ddd;
+}
+
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 15px;
+}
+
+.sub-category-card {
+    flex: 0 0 auto;
+    width: 250px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sub-category-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.sub-category-card h3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.sub-category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>men's Collection</h1>
+        <a href="home.html">Back to Home</a>
+    </header>
+    <main>
+        <section class="sub-category">
+            <div class="sub-category-card">
+                <h3>formal</h3>
+                <img src='https://urbanmenoutfits.com/wp-content/uploads/2018/07/dashing-formal-outfit-ideas-for-stylish-men-03-819x1024.jpg' alt="formal Wear">
+            </div>
+            <div class="sub-category-card">
+                <h3>Ethnic</h3>
+                <img src='https://shilpaahuja.com/wp-content/uploads/2015/10/designer-wedding-sherwani-for-men-latest-trends-fall-winter-2015-2016-couture-groom-outfit-gold-nivedita-saboo.jpg' alt="Ethnic Wear">
+            </div>
+            <div class="sub-category-card">
+                <h3>Party Wear</h3>
+                <img src='https://www.beyoung.in/blog/wp-content/uploads/2020/02/beach-look-min-1-931x1024.jpg'alt="Party Wear">
+            </div>
+            <div class="sub-category-card">
+                <h3>Nightwear</h3>
+                <img src='https://i.pinimg.com/736x/4c/17/62/4c1762641067ea44beaf8340ef207c58--mens-pjs-mens-pajamas.jpg' alt="Nightwear">
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
